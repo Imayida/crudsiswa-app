@@ -16,12 +16,12 @@ return new class extends Migration
             $table->unsignedBigInteger('clas_id');
             $table->string('photo');
             $table->string('name');
-            $table->BigInteger('nisn');
+            $table->BigInteger('nisn')->unique();
             $table->string('alamat');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('no_handphone');
+            $table->string('no_handphone')->unique();
             $table->rememberToken();
             $table->timestamps();
         });
@@ -50,5 +50,5 @@ return new class extends Migration
         Schema::dropIfExists('users');
         Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
-    }
+}
 };
