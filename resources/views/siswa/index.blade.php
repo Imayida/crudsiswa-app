@@ -11,6 +11,7 @@
         <h1>Halaman Beranda</h1>
 
         <div class="list-data-siswa">
+            <a href="{{ url('clas') }}">Menu kelas</a> | <a href="{{ url('/clas/siswa') }}">Menu Siswa</a>
             <h2>List Data Siswa</h2>
             <a href="{{ url('siswa/create') }}">Tambah</a>
             <table border="1">
