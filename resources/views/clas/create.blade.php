@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data Kelas</title>
-</head>
-<body>
+@extends('layouts.app')
+@section('title')
+    <title>Create Clas</title>
+@endsection
+@section('content')
+
     <h2>Tambah Data Kelas</h2>
     <a href="{{ route('clas.index') }}">Kembali</a>
     <br><br>
@@ -28,5 +26,4 @@
         </div>
         <button type="submit">Simpan</button>
     </form>
-</body>
-</html>
+@endsection

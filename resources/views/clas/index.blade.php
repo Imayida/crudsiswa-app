@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Kelas</title>
-</head>
-<body>
-    <a href="{{ url('clas') }}">Menu kelas</a> | <a href="{{ url('/') }}">Menu Siswa</a>
+@extends('layouts.app')
+@section('title')
+    <title>Index Clas</title>
+@endsection
+@section('content')
+    
 
     <h1>Daftar Kelas</h1>
     <a href="{{ route('clas.create') }}">Tambah Kelas</a>
@@ -36,5 +33,4 @@
             @endforeach
         </tbody>
     </table>
-</body>
-</html>
+@endsection

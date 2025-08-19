@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Halaman Edit</title>
-</head>
-<body>
+@extends('layouts.app')
+@section('title')
+    <title>Edit Siswa</title>
+@endsection
+@section('content')
 
     <h1>Halaman Edit Siswa</h1>
     <p>Data Siswa</p>
@@ -124,5 +120,4 @@
 
     </form>
 
-</body>
-</html>
+@endsection
